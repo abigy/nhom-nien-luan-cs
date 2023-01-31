@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+:root {
+    --text-color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pad_5px{
+    padding: 7px;
+}
+
+nav {
+    height: 44px;
+    background: black;
+}
+
+nav .logo_icon{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+nav .container .li_nav{
+    color: #dadada;
+    display: flex;
+    list-style: none;
+    line-height: 44px;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+nav .container .li_nav li {
+    margin-left: 20px;
+    transition: 0.25s;    
+    cursor: pointer;
+}
+
+nav .container .li_nav li:hover {
+    color: var(--text-color);
+}
+
+nav .btn_search {
+    line-height: 44px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+nav  .btn_bag {
+    line-height: 44px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+nav .sub_search {
+    height: 44px;
+    background: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav .sub_search input {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 4px 4px;
+    width: 30%;
+    animation: gone ease 0.7s;
+    border: none;
+    background: transparent;
+}
+
+nav .sub_search input::placeholder {
+    font-size: 15px;
+}
+
+nav .sub_search .btn_search2 {
+    position: absolute;
+    color: #dadada;
+    right: 65.4%;
+    margin-top: 11px;
+    font-size: 20px;
+    animation: iconSearch ease 0.7s;
+}
+
+nav .sub_search .close {
+    position: absolute;
+    color: #dadada;
+    right: 34.9%;
+    top: 10px;
+    font-size: 25px;
+    animation: iconClose ease 1.5s;
+}
+
+@keyframes gone {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes iconClose {
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes iconSearch {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.off {
+    display: none;
+}
+
+/*Slider*/
+#slider {
+    width: 100%;
+    height: 1090px;
+    background: #060606;
+}
+
+.slider_about h1{
+    background: linear-gradient(90deg, #5C375C, #9AC1DA, #3D5375);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    transform: translateY(100px);
+    font-size: 50px;
+}
+
+.slider_about button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    padding: 12px 22px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid rgb(118, 117, 98);
+    color: white;
+    font-size: 20px;
+    transition: 0.7s;
+    
+}
+
+.slider_about button:hover {
+    background-color: var(--text-color);
+    color: black;
+}
+
+.slider_about .container_text {
+
+    display: block;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.slider_about .about_name {
+    text-decoration: none;
+    color: white;
+    font-size: 45px;    
+}
+
+.slider_about .learn_more, .order_now {
+    font-size: 19px;
+    text-decoration: none;
+    color: #2997FF;
+}
+
+.slider_about .order_now {
+    margin-left: 40px;
+}
+
+.slider_about .learn_more:hover,
+.slider_about .order_now:hover{
+    text-decoration: underline;
+}
+
+.slider_about img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    background: transparent;
+}
+
+.about_name2 {
+    text-decoration: none;
+    color: black;
+    font-size: 45px; 
+}
+
+.slider_about .container_text2 {
+    background-color: #eeeeee;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.more_img {
+    padding: 10px;
+}
+
+.more_img .container_img img {
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.more_img .container_img{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+
+.more_img .more_info img {
+    width: 99.5%;
+}
+
+.more_img .apple_watch img{
+    width:  99.5%;
+    height: 99%;
+}
+
+.more_img .ipad img {
+    width: 99.5%;
+    height: 99%;
+}
+
+.more_img .container_img img:hover {
+    scale: 1.02;
+}
